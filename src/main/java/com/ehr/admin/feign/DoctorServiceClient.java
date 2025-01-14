@@ -17,7 +17,7 @@ public interface DoctorServiceClient {
     public ResponseEntity<?> deleteDoctor(@PathVariable Long id);
 
     @PostMapping("/doctor/create")
-    public ResponseEntity<?> createDoctor(@RequestBody DoctorDto doctorDto);
+    public ResponseEntity<?> createDoctor(@RequestBody DoctorPersonalDetailsDto doctorPersonalDetailsDto);
 
     @PutMapping("/doctor/update")
     public ResponseEntity<?> updateDoctor(@RequestBody DoctorPersonalDetailsDto doctorPersonalDetailsDto);

@@ -20,8 +20,8 @@ public class AdminDoctorService {
         return doctorServiceClient.deleteDoctor(id);
     }
 
-    public ResponseEntity<?> createDoctor(DoctorDto doctorDto) {
-        return doctorServiceClient.createDoctor(doctorDto);
+    public ResponseEntity<?> createDoctor(DoctorPersonalDetailsDto doctorPersonalDetailsDto) {
+        return doctorServiceClient.createDoctor(doctorPersonalDetailsDto);
     }
 
     public ResponseEntity<?> updateDoctor(DoctorPersonalDetailsDto doctorPersonalDetailsDto) {

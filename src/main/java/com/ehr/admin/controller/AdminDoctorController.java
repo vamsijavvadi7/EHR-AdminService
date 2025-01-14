@@ -24,8 +24,8 @@ public class AdminDoctorController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<?> createDoctor(@RequestBody DoctorDto doctorDto) {
-        return adminDoctorService.createDoctor(doctorDto);
+    public ResponseEntity<?> createDoctor(@RequestBody DoctorPersonalDetailsDto doctorPersonalDetailsDto) {
+        return adminDoctorService.createDoctor(doctorPersonalDetailsDto);
     }
 
     @PutMapping("/update")
